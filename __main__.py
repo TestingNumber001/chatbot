@@ -4,6 +4,10 @@ from api.linebot import *
 
 app = Flask(__name__)
 
+@app.route('/', methods=['GET'])
+def test():
+    return "Server is running"
+
 @app.route("/callback", methods=['POST'])
 def callback():
     # get X-Line-Signature header value
