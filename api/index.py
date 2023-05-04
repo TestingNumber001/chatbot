@@ -1,6 +1,6 @@
 from flask import Flask, request, abort
 
-from api.linebot import *
+from linebot_api import *
 
 app = Flask(__name__)
 
