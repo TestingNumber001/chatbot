@@ -12,7 +12,8 @@ from linebot.models import (
 
 from dotenv import load_dotenv
 from os import environ as env
-    
+
+load_dotenv()
 app = Flask(__name__)
 
 line_bot_api = LineBotApi(env.get('channel_access_token'))
